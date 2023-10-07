@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav_section {
+  max-width: 1200px;
+  border-bottom: 1px solid rgb(255, 151, 15);
+  height: 72px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 50px;
+}
+ul {
+  display: flex;
+  gap: 24px;
+}
+ul li {
+  cursor: pointer;
+  list-style: none;
+}
+.nav_btn,
+.shop_btn {
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 17px;
+  background: #ff9327;
+  color: #fff;
+}
+.menu_btn {
+  display: none;
+}
+/* ,,,,,,,,,,,,,,,,,HEROSEC................... */
+
+.hero_content {
+  height: 70vh;
+  max-width: 1100px;
+  margin: 2px 0;
+  display: flex;
+  padding: 40px;
+}
+.text_area {
+  width: 70%;
+  gap: 30px;
+}
+.text {
+  font-size: 40px;
+  font-weight: 800;
+}
+.text p {
+  margin: 20px 0;
+}
+.btns {
+  margin: 30px 0;
+}
+.btns button {
+  margin-right: 20px;
+}
+.category {
+  background: transparent;
+  color: #000;
+}
+.avail {
+  margin: 10px 0;
+}
+
+.logoos {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero_img {
+  height: 400px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.none {
+  display: none;
+}
+/* ,,,,,,,,,,,,,,,,,,,RESPONSIVENES<<<<<<<<<< */
+
+@media (max-width: 500px) {
+  body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  .nav_section {
+    width: 90vw;
+  }
+  ul {
+    gap: 24px;
+    display: none;
+  }
+  ul li {
+    cursor: pointer;
+    list-style: none;
+  }
+  .nav_btn {
+    display: none;
+  }
+  .menu_btn {
+    display: flex;
+    all: unset;
+    height: 30px;
+    width: 30px;
+    border: solid;
+    cursor: pointer;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  .hero_content {
+    height: 100vh;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  .text_area {
+    width: 80vw;
+  }
+  .hero_img {
+    height: 200px;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero_img img {
+    height: 100%;
+    width: 100%;
+  }
+  .logoos {
+    margin: 25px 0;
+  }
+  .sidebar {
+    height: 80vh;
+    width: 99%;
+    background: #ff4d17;
+    overflow: hidden;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all 0.7s ease-in-out;
+  }
+  .show {
+    transition: all 0.9s ease-in-out;
+    transform: translateX(0%);
+  }
+  .crossBtn {
+    height: 30px;
+    width: 30px;
+    border: solid;
+    font-size: 27px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 83vw;
+    top: 15px;
+  }
+
+  .ul {
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+  }
+  .ul li {
+    height: 50px;
+    width: 100%;
+    list-style: none;
+    font-weight: bold;
+    color: #fff;
+
+    border-bottom: solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in;
+  }
+  .ul li:hover {
+    background: rgba(255, 95, 32, 0.998);
+    cursor: pointer;
+  }
+  .ul li:active {
+    background: #b50000;
+  }
+}
